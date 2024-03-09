@@ -7,38 +7,58 @@
             background: rgb(22, 22, 22);
         }
 
+        img.bg {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            opacity: .4;
+            top: 0;
+            left: 0;
+        }
+
         a.link {
-            font-size: 50px;
+            position: relative;
+            z-index: 2;
+            font-size: 70px;
             font-family: cursive;
             display: block;
             text-decoration: none;
             color: #ffffff;
             transition: .05s;
-            text-align:  center;
+            text-align: center;
         }
 
         a.link:hover {
             color: #b6b6b6;
             font-weight: bold;
-            font-size: 55px;
+            font-size: 75px;
         }
 
         h1.title1 {
-            text-align: center;
-            margin-left: auto;
+            position: absolute;
+            z-index: 2;
             font-family: cursive;
             color: #ffffff;
             font-size: 70px;
+            left: 50%;
+            top: 0%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 
 <body>
-    <div>    
-        <h1 class="title1">innocent_user_website</h1>
-        <a href="https://wickddd.github.io/innocent_user_websites/about/" class="link">about</a>
-        <a href="https://wickddd.github.io/innocent_user_websites/fanart/" class="link">fanart</a>
-        <a href="https://wickddd.github.io/innocent_user_websites/credits/" class="link">credits</a>
+    <img class="bg" src="https://cdn.discordapp.com/attachments/876131925415301151/1216036528443228190/image.png?ex=65feed45&is=65ec7845&hm=cc5092fc58ed769551eee3f9823fe2d6d7551a87e9737ae1ab44d649c48d032a&">
+
+    <div>
+        <h1 class="title1">
+            innocent_user_website 
+        </h1>
+        <div style="padding-top: 8em">
+            <a href="https://wickddd.github.io/innocent_user_websites/about/" class="link" >about</a>
+            <a href="https://wickddd.github.io/innocent_user_websites/fanart/" class="link">fanart</a>
+            <a href="https://wickddd.github.io/innocent_user_websites/credits/" class="link">credits</a>
+        </div>
     </div>
 </body>
 </html>
